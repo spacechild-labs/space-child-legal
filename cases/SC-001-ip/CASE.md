@@ -37,7 +37,7 @@ Protect the Space Child ecosystem's intellectual property and create a novel lic
 
 ## Space Child Ecosystem IP Inventory
 - ~30 repositories across NickFlach and flaukowski GitHub accounts
-- Key repos: ghostOS, SingularisPrime, cosmic-empathy-core, SpaceChildCollective, 0xSCADA, kannaka-memory
+- Key repos: ghostmagicOS, SingularisPrime, cosmic-empathy-core, SpaceChildCollective, 0xSCADA, kannaka-memory
 - Music catalog (~185 unique tracks)
 - Consciousness research and mathematical frameworks
 

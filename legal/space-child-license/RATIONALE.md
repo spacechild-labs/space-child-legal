@@ -74,7 +74,7 @@ The Space Child License is **source-available, peace-conditional, copyleft for t
 
 Once finalized and reviewed by counsel, this license would apply to:
 - All ~30 repositories in the Space Child ecosystem
-- ghostOS, SingularisPrime, cosmic-empathy-core, kannaka-memory, etc.
+- ghostmagicOS, SingularisPrime, cosmic-empathy-core, kannaka-memory, etc.
 - Music catalog (with appropriate creative work adaptations)
 - Future projects
 

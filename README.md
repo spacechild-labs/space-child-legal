@@ -43,6 +43,21 @@ space-child-legal/
 |---------|--------|--------|----------|
 | SC-001 | Space Child IP Protection & Licensing | Active | High |
 
+## Documentation Viewer
+
+A clean, responsive web interface for viewing legal documents:
+
+📖 **View online**: Open `docs/index.html` in your browser
+🚀 **Local development**: Run `npx serve docs` or `python -m http.server` from the docs/ directory
+
+The viewer includes:
+- Privacy Policy
+- Terms of Service  
+- Cookie Policy
+- Space Child License v1.0
+
+Built with vanilla HTML/CSS/JS and dark mode aesthetic matching Space Child branding.
+
 ## The Space Child License
 
 A novel open-source license designed for humanity's benefit:

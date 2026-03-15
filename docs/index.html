@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Child Legal Documents</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked@14.0.0/marked.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 280px;
+            background: #111111;
+            border-right: 1px solid #333;
+            padding: 2rem 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .logo {
+            margin-bottom: 2rem;
+        }
+
+        .logo h1 {
+            color: #00f5ff;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .logo .tagline {
+            color: #9b59b6;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .nav-menu {
+            list-style: none;
+        }
+
+        .nav-item {
+            margin-bottom: 0.5rem;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 0.75rem 1rem;
+            color: #ccc;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .nav-link:hover {
+            background: #1a1a1a;
+            color: #00f5ff;
+        }
+
+        .nav-link.active {
+            background: linear-gradient(135deg, #00f5ff20, #9b59b620);
+            color: #00f5ff;
+            border: 1px solid #00f5ff30;
+        }
+
+        .contact-info {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #333;
+        }
+
+        .contact-info h3 {
+            color: #9b59b6;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info a {
+            color: #00f5ff;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 2rem;
+            overflow-y: auto;
+        }
+
+        .content-area {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .document-header {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #333;
+        }
+
+        .document-header h1 {
+            color: #00f5ff;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .document-header .subtitle {
+            color: #9b59b6;
+            font-size: 1rem;
+        }
+
+        .welcome-content {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .welcome-content h1 {
+            color: #00f5ff;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .welcome-content p {
+            color: #ccc;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .markdown-content {
+            line-height: 1.7;
+        }
+
+        .markdown-content h1 {
+            color: #00f5ff;
+            font-size: 2rem;
+            margin: 2rem 0 1rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #333;
+        }
+
+        .markdown-content h2 {
+            color: #9b59b6;
+            font-size: 1.5rem;
+            margin: 1.5rem 0 0.75rem 0;
+        }
+
+        .markdown-content h3 {
+            color: #00f5ff;
+            font-size: 1.25rem;
+            margin: 1.25rem 0 0.5rem 0;
+        }
+
+        .markdown-content p {
+            margin-bottom: 1rem;
+        }
+
+        .markdown-content ul, .markdown-content ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        .markdown-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .markdown-content a {
+            color: #00f5ff;
+            text-decoration: none;
+        }
+
+        .markdown-content a:hover {
+            text-decoration: underline;
+        }
+
+        .markdown-content strong {
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .markdown-content em {
+            color: #9b59b6;
+        }
+
+        .markdown-content code {
+            background: #1a1a1a;
+            color: #00f5ff;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+
+        .markdown-content pre {
+            background: #1a1a1a;
+            padding: 1rem;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        .markdown-content blockquote {
+            border-left: 3px solid #9b59b6;
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: #ccc;
+        }
+
+        .loading {
+            text-align: center;
+            color: #9b59b6;
+            padding: 2rem;
+        }
+
+        .error {
+            text-align: center;
+            color: #ff6b6b;
+            padding: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                padding: 1rem;
+            }
+
+            .nav-menu {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+
+            .nav-item {
+                margin-bottom: 0;
+            }
+
+            .contact-info {
+                margin-top: 1rem;
+                padding-top: 1rem;
+            }
+
+            .main-content {
+                padding: 1rem;
+            }
+
+            .welcome-content {
+                padding: 2rem 1rem;
+            }
+
+            .welcome-content h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">
+                <h1>Space Child</h1>
+                <div class="tagline">Legal Documents</div>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a class="nav-link" data-doc="home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-doc="privacy">Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-doc="terms">Terms of Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-doc="cookies">Cookie Policy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-doc="license">Space Child License v1.0</a>
+                </li>
+            </ul>
+
+            <div class="contact-info">
+                <h3>Contact</h3>
+                <p><a href="mailto:info@spacechild.love">info@spacechild.love</a></p>
+                <p style="font-size: 0.8rem; color: #666; margin-top: 1rem;">
+                    Space Child, LLC
+                </p>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <div class="content-area">
+                <div id="content">
+                    <div class="welcome-content">
+                        <h1>Space Child Legal Documents</h1>
+                        <p>Select a document from the sidebar to view our legal policies and license.</p>
+                        <p style="font-size: 0.9rem; color: #666;">
+                            All documents are maintained by Space Child, LLC. For questions or concerns, 
+                            please contact us at <a href="mailto:info@spacechild.love">info@spacechild.love</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Document mapping
+        const documents = {
+            'privacy': {
+                file: 'PRIVACY-POLICY.md',
+                title: 'Privacy Policy',
+                subtitle: 'How we handle your personal information'
+            },
+            'terms': {
+                file: 'TERMS-OF-SERVICE.md',
+                title: 'Terms of Service',
+                subtitle: 'Legal terms for using our services'
+            },
+            'cookies': {
+                file: 'COOKIE-POLICY.md',
+                title: 'Cookie Policy',
+                subtitle: 'How we use cookies and tracking technologies'
+            },
+            'license': {
+                file: '../legal/space-child-license/SPACE-CHILD-LICENSE-v1.0.md',
+                title: 'Space Child License v1.0',
+                subtitle: 'Open source license for Space Child projects'
+            }
+        };
+
+        // DOM elements
+        const content = document.getElementById('content');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        // Load document function
+        async function loadDocument(docKey) {
+            if (docKey === 'home') {
+                showHome();
+                return;
+            }
+
+            const doc = documents[docKey];
+            if (!doc) return;
+
+            // Show loading
+            content.innerHTML = '<div class="loading">Loading...</div>';
+
+            try {
+                const response = await fetch(doc.file);
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const markdown = await response.text();
+                const html = marked.parse(markdown);
+                
+                content.innerHTML = `
+                    <div class="document-header">
+                        <h1>${doc.title}</h1>
+                        <div class="subtitle">${doc.subtitle}</div>
+                    </div>
+                    <div class="markdown-content">
+                        ${html}
+                    </div>
+                `;
+            } catch (error) {
+                content.innerHTML = `
+                    <div class="error">
+                        <h2>Error loading document</h2>
+                        <p>Could not load ${doc.title}: ${error.message}</p>
+                        <p>Please try again or contact <a href="mailto:info@spacechild.love">info@spacechild.love</a> if the problem persists.</p>
+                    </div>
+                `;
+            }
+        }
+
+        // Show home content
+        function showHome() {
+            content.innerHTML = `
+                <div class="welcome-content">
+                    <h1>Space Child Legal Documents</h1>
+                    <p>Select a document from the sidebar to view our legal policies and license.</p>
+                    <p style="font-size: 0.9rem; color: #666;">
+                        All documents are maintained by Space Child, LLC. For questions or concerns, 
+                        please contact us at <a href="mailto:info@spacechild.love">info@spacechild.love</a>.
+                    </p>
+                </div>
+            `;
+        }
+
+        // Update active nav link
+        function updateActiveLink(activeKey) {
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.dataset.doc === activeKey) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        // Handle navigation clicks
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const docKey = link.dataset.doc;
+                updateActiveLink(docKey);
+                loadDocument(docKey);
+                
+                // Update URL hash
+                window.location.hash = docKey === 'home' ? '' : docKey;
+            });
+        });
+
+        // Handle browser back/forward
+        window.addEventListener('hashchange', () => {
+            const hash = window.location.hash.slice(1) || 'home';
+            updateActiveLink(hash);
+            loadDocument(hash);
+        });
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash.slice(1) || 'home';
+            updateActiveLink(hash);
+            loadDocument(hash);
+        });
+    </script>
+</body>
+</html>

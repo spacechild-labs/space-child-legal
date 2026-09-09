@@ -24,26 +24,42 @@ we do not call it that):
 
 | File | Status |
 |---|---|
-| `legal/space-child-license/SPACE-CHILD-LICENSE-v1.0.md` | **In effect** — the LICENSE file in 62 repositories |
+| `legal/space-child-license/SPACE-CHILD-LICENSE-v1.0.md` | **In effect** (source); canonical plain text in `licensing/SPACE-CHILD-LICENSE-1.0.txt` |
 | `legal/space-child-license/SPACE-CHILD-LICENSE-v1.1-DRAFT.md` | Draft for counsel review; not yet in effect |
 | `legal/space-child-license/v1.1-REDLINE-AND-COUNSEL-BRIEF.md` | What changed from v1.0, why, and the ten questions only a lawyer can answer |
 | `legal/space-child-license/RATIONALE.md` | Design rationale and comparison to Hippocratic, NPL, PolyForm and others |
 | `legal/space-child-license/scl-audit-2026-09-08.json` | Corpus-wide consistency audit (170 repos scanned, 62 carry the license, 32 contradict it in their manifest) |
 | `cases/SC-001-ip/` | IP audit (2026-03-13), license comparison, trademark landscape, patent prior art |
 
-### Applying it
+### The tooling
+
+Four commands, one library (`tools/lib/scl.mjs`), no dependencies. Canonical artifacts live in
+`licensing/`: the full text `SPACE-CHILD-LICENSE-1.0.txt`, the short `NOTICE-1.0.txt`, and
+`manifest.json` with their hashes, the SPDX identifier (`LicenseRef-SpaceChild-1.0`) and the
+canonical URL (`https://legal.spacechild.love/license`).
 
 ```
-node tools/scl-audit.mjs --root <dir-of-owner/name-checkouts>     # table: LICENSE vs manifest vs README, per repo
-node tools/scl-audit.mjs --repo <path> [--repo <path> ...] --json
-node tools/scl-audit.mjs ... --fix                                # rewrite manifests to point at the LICENSE file
+node tools/scl-audit.mjs --root <dir-of-owner/name-checkouts> [--json]   # table: LICENSE form, manifests, README, per repo
+node tools/scl-check.mjs [<path>] [--strict] [--require-notice]           # CI gate: exit 1 on a real contradiction
+node tools/scl-apply.mjs <path> --dry-run                                 # what it would do
+node tools/scl-apply.mjs <path> [--holder "Name"] [--year 2025] [--headers]
+node tools/scl-plan.mjs audit.json --gh [--owner spacechild-labs] [--md]  # what each repo needs; forks and copyleft skipped
 ```
 
-`--fix` changes only the license declaration in `package.json` (`SEE LICENSE IN LICENSE`),
-`Cargo.toml` (`license-file = "LICENSE"`) and `pyproject.toml`; it never adds or edits a LICENSE
-file. Putting a repository under the license is a decision; commit fixes as pull requests. Forks
-keep their upstream license. A repository that was MIT before carries the license for new
-contributions going forward, with a dated note, because the earlier MIT grant cannot be revoked.
+- **A LICENSE file should be the full text.** 59 of the 62 repositories that carry the license hold
+  a 17-line notice pointing at legal.spacechild.love instead; that works only while the URL does.
+  `scl-check` calls this *reference-only* (a warning, an error with `--strict`); `scl-apply`
+  upgrades it to the full text and writes the notice to `NOTICE` with the holder and years.
+- **Manifests must point at the file.** `package.json` → `SEE LICENSE IN LICENSE`, `Cargo.toml` →
+  `license-file = "LICENSE"`, `pyproject.toml` → `license = { file = "LICENSE" }`. Only that line is
+  rewritten.
+- **A previously permissive repo keeps its old grant on record**: `LICENSE-MIT-prior` beside a dated
+  `RELICENSING.md`, because a grant already made cannot be revoked. Forks and copyleft-licensed
+  repositories are refused; those are decisions.
+- **CI**: `.github/workflows/scl-check.yml` is a reusable workflow any repository in the
+  organisation can call with one `uses:` line. Contributor terms: `licensing/CONTRIBUTING-LICENSE.md`.
+
+Every change goes out as a pull request. It changes the terms on which a repository is offered.
 
 ### What "legit" still needs
 

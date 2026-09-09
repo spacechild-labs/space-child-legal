@@ -9,7 +9,9 @@ software can reuse. No personal legal matter lives here.
 ```
 legal/space-child-license/  the license (v1.0 in effect, v1.1 draft), rationale, counsel brief, audits
 cases/SC-001-ip/            the licensing matter itself: IP audit, research, case.json
-tools/scl-audit.mjs         does every repo declare the license consistently? (--fix rewrites manifests)
+licensing/                  canonical full text, NOTICE template, manifest.json (hashes, SPDX id, URL), contributor terms
+tools/lib/scl.mjs           the library: read, audit, check, apply, plan
+tools/scl-{audit,check,apply,plan}.mjs   thin CLIs over it; .github/workflows/scl-check.yml is the reusable CI gate
 schema/case.schema.json     the generic matter record (organizational fields only)
 rules/deadlines.json        statutory clocks with authorities, all verified:false
 src/

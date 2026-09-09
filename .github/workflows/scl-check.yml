@@ -1,0 +1,65 @@
+# Space Child License check — reusable workflow.
+#
+# In any repository of the organisation:
+#
+#   name: license
+#   on: [push, pull_request]
+#   jobs:
+#     scl:
+#       uses: spacechild-labs/space-child-legal/.github/workflows/scl-check.yml@main
+#       with:
+#         strict: false          # true once the repo carries the full text
+#         require-notice: true
+#
+# The job checks out the calling repository, fetches this repository's tools at a pinned ref, and
+# runs scl-check against the caller. It fails on a missing or foreign LICENSE, a LICENSE text that
+# differs from the canonical version, a manifest that declares another license, or a wrong version
+# claim; it warns on a reference-only LICENSE and cosmetic drift unless strict is set.
+#
+# This repository is private today; a private reusable workflow is callable by other repositories
+# in the same organisation once Settings → Actions → Access allows it. When the license text gets a
+# public home the workflow moves with it and the `uses:` line changes once.
+name: scl-check
+
+on:
+  workflow_call:
+    inputs:
+      strict:
+        type: boolean
+        default: false
+      require-notice:
+        type: boolean
+        default: true
+      tools-ref:
+        type: string
+        default: main
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  scl-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository under test
+        uses: actions/checkout@v4
+        with:
+          path: target
+      - name: Fetch the license tooling
+        uses: actions/checkout@v4
+        with:
+          repository: spacechild-labs/space-child-legal
+          ref: ${{ inputs.tools-ref || 'main' }}
+          path: scl-tools
+          token: ${{ secrets.SCL_TOOLS_TOKEN || github.token }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: scl-check
+        run: >
+          node scl-tools/tools/scl-check.mjs target
+          ${{ inputs.strict && '--strict' || '' }}
+          ${{ (inputs.require-notice == '' || inputs.require-notice) && '--require-notice' || '' }}
+      - name: Library tests (this repository only)
+        if: github.repository == 'spacechild-labs/space-child-legal'
+        run: node --test "scl-tools/tools/tests/**/*.test.mjs"

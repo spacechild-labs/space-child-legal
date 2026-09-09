@@ -107,11 +107,14 @@ function fix(row) {
   for (const m of row.contradictions) {
     const p = join(row.dir, m.file);
     if (m.file === "package.json") {
+      // Textual replacement of the one line, never a re-serialization: a
+      // JSON.stringify round-trip keeps the keys but rewrites indentation and
+      // line endings, and the first four PRs from this tool were 300-line
+      // diffs of a one-line change (2026-09-08).
       const raw = readFileSync(p, "utf8");
-      const indent = (raw.match(/^(\s+)"/m) || [, "  "])[1];
-      const d = JSON.parse(raw);
-      d.license = "SEE LICENSE IN LICENSE";
-      writeFileSync(p, JSON.stringify(d, null, indent) + (raw.endsWith("\n") ? "\n" : ""));
+      const next = raw.replace(/("license"\s*:\s*)"[^"]*"/, '$1"SEE LICENSE IN LICENSE"');
+      if (next === raw) { console.error(`  could not find a "license" line in ${p}`); continue; }
+      writeFileSync(p, next);
       changed.push(m.file);
     } else if (m.file === "Cargo.toml") {
       const raw = readFileSync(p, "utf8");

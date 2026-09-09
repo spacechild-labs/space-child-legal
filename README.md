@@ -60,13 +60,14 @@ Built with vanilla HTML/CSS/JS and dark mode aesthetic matching Space Child bran
 
 ## The Space Child License
 
-A novel open-source license designed for humanity's benefit:
+A source-available, peace-conditional license designed for humanity's benefit (not "open source" by the OSI's definition, and we do not call it that):
 - **Free to use** for peaceful, humanitarian purposes
 - **Encouraged** for projects benefiting humanity
 - **Violations** include use in warfare, oppression, or harm
 - **Government/military use** requires paid licensing for offensive operations
 - **Self-defense** explicitly permitted
 - Legally credible. Not MIT. Not Apache. Something new.
+- **v1.1 draft for counsel review:** `legal/space-child-license/SPACE-CHILD-LICENSE-v1.1-DRAFT.md` — with `v1.1-REDLINE-AND-COUNSEL-BRIEF.md` (what changed, what a lawyer must decide) and `tools/scl-audit.mjs` (does every repo declare it consistently?)
 
 ## Privacy & Security
 

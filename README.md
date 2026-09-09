@@ -28,11 +28,16 @@ space-child-legal/
 ├── docs/                   # Documentation
 │   ├── PRD.md             # Product Requirements
 │   └── architecture.md    # System design
-├── src/                    # Application source
-│   ├── case-manager/      # Case tracking engine
-│   ├── email-ingestion/   # Gmail integration
-│   ├── research-agent/    # AI legal research
-│   └── timeline/          # Case timeline builder
+├── schema/                 # case.schema.json — the case file contract
+├── rules/                  # deadlines.json — statutory clocks with authorities (all unverified)
+├── src/                    # Application source (TypeScript, no runtime deps)
+│   ├── case-manager/      # types, validator, loader
+│   ├── deadline-engine/   # triggers × rules → due dates
+│   ├── document-pipeline/ # classification, provenance, OCR providers
+│   ├── safety-rails/      # output classifier, gate, audit log, kill switch
+│   ├── timeline/          # case timeline builder
+│   ├── dashboard/         # static HTML dashboard
+│   └── cli.ts             # sclegal
 ├── evidence/               # Evidence management (gitcrypted)
 └── LICENSE                 # Space Child License v1.0
 ```
@@ -42,6 +47,28 @@ space-child-legal/
 | Case ID | Matter | Status | Priority |
 |---------|--------|--------|----------|
 | SC-001 | Space Child IP Protection & Licensing | Active | High |
+
+## Phase 1 — the file clerk (shipped 2026-09-09)
+
+```
+npm install && npm test          # build + node:test (runs against the real case files too)
+node dist/cli.js cases           # every matter: posture, representation, next deadline
+node dist/cli.js validate        # case.json against schema/case.schema.json + file-clerk rules
+node dist/cli.js deadlines       # recorded + computed deadlines, with authority and verified flag
+node dist/cli.js timeline SC-002 # the timeline as markdown
+node dist/cli.js classify <file> # what kind of document, how sure, which cues
+node dist/cli.js ingest SC-003 <file> --source "court e-filing"   # hash + classify; prints the record to add
+node dist/cli.js check "<text>"  # run text through the safety rails
+node dist/cli.js dashboard       # build/dashboard.html (gitignored — it contains case data)
+```
+
+What it is: `cases/<slug>/case.json` (schema in `schema/`), a deadline engine over
+`rules/deadlines.json` (every rule cites its authority and is `verified:false` until a lawyer
+confirms it; a court-set date always outranks a computed one), a rule-based document classifier
+with sha256 provenance, the safety-rail gate every AI output must pass (organizational /
+informational-with-disclaimer / blocked, append-only audit log, `SCLEGAL_AI_DISABLED=1` kill
+switch), a timeline builder, and a static dashboard that puts "find a lawyer" first on any matter
+without retained counsel. Design notes: `docs/architecture.md`. No runtime dependencies.
 
 ## Documentation Viewer
 

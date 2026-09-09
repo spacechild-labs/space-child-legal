@@ -16,3 +16,7 @@ node_modules/
 target/
 dist/
 __pycache__/
+
+# Phase 1 outputs that contain case data or AI audit records
+build/
+.local/

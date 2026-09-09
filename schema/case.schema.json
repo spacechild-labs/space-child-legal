@@ -1,0 +1,163 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://spacechild.love/legal/schema/case.schema.json",
+  "title": "Space Child Legal — case file",
+  "description": "The structured record of one matter. Everything here is ORGANIZATIONAL: who, what court, which dates started which clocks, what happened when, which documents exist. It never records a legal theory, a defense, or an argument — those belong to the human and their lawyer (PRD §6).",
+  "type": "object",
+  "required": ["id", "slug", "title", "matter_type", "status", "priority", "opened", "jurisdiction", "client", "representation", "posture"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "id": { "type": "string", "pattern": "^SC-[0-9]{3}$", "description": "Case id, e.g. SC-003" },
+    "slug": { "type": "string", "pattern": "^SC-[0-9]{3}-[a-z0-9-]+$", "description": "Directory name under cases/" },
+    "title": { "type": "string", "minLength": 3 },
+    "matter_type": {
+      "type": "string",
+      "enum": ["debt_collection", "eviction", "consumer", "employment", "criminal_owi", "criminal_other", "ip_licensing", "family", "administrative", "other"]
+    },
+    "status": { "type": "string", "enum": ["active", "monitoring", "closed"] },
+    "priority": { "type": "string", "enum": ["critical", "high", "medium", "low"] },
+    "opened": { "type": "string", "format": "date" },
+    "closed": { "type": "string", "format": "date" },
+    "jurisdiction": {
+      "type": "object",
+      "required": ["country", "state"],
+      "additionalProperties": false,
+      "properties": {
+        "country": { "type": "string", "enum": ["US"] },
+        "state": { "type": "string", "pattern": "^[A-Z]{2}$" },
+        "county": { "type": "string" },
+        "court": { "type": "string", "description": "Court or agency as named on the papers" },
+        "case_number": { "type": "string" },
+        "forum": { "type": "string", "enum": ["state_court", "small_claims", "federal_court", "agency", "administrative_hearing", "none"] }
+      }
+    },
+    "client": {
+      "type": "object",
+      "required": ["name", "role"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string" },
+        "role": { "type": "string", "enum": ["plaintiff", "defendant", "respondent", "petitioner", "employee", "complainant", "licensor", "other"] }
+      }
+    },
+    "parties": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["role", "name"],
+        "additionalProperties": false,
+        "properties": {
+          "role": { "type": "string", "enum": ["plaintiff", "defendant", "prosecutor", "employer", "agency", "creditor", "debt_buyer", "witness", "other"] },
+          "name": { "type": "string" },
+          "counsel": { "type": "array", "items": { "type": "string" } },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    "representation": {
+      "type": "object",
+      "required": ["status"],
+      "additionalProperties": false,
+      "description": "Whether the client has a lawyer. The platform's primary metric is that this reaches 'retained'.",
+      "properties": {
+        "status": { "type": "string", "enum": ["retained", "consulting", "seeking", "pro_se", "not_needed"] },
+        "attorney": { "type": "string" },
+        "firm": { "type": "string" },
+        "since": { "type": "string", "format": "date" },
+        "referral_sources": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "posture": {
+      "type": "string",
+      "enum": ["pre_filing", "served_answer_due", "answered", "discovery", "hearing_set", "trial_set", "post_judgment", "appeal", "administrative", "investigation", "closed"],
+      "description": "Where the matter stands procedurally. Organizational, not an assessment."
+    },
+    "triggers": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Dates that start procedural clocks. The deadline engine reads these; nothing else does.",
+      "properties": {
+        "incident_date": { "type": "string", "format": "date" },
+        "service_date": { "type": "string", "format": "date", "description": "Date the client was served with the complaint / original notice" },
+        "charge_date": { "type": "string", "format": "date" },
+        "revocation_notice_date": { "type": "string", "format": "date", "description": "OWI: date the implied-consent revocation notice was received" },
+        "adverse_action_date": { "type": "string", "format": "date", "description": "Employment: date of the act complained of (PIP, termination, demotion)" },
+        "judgment_date": { "type": "string", "format": "date" },
+        "hearing_date": { "type": "string", "format": "date" }
+      }
+    },
+    "deadlines": {
+      "type": "array",
+      "description": "Deadlines known from the court, counsel, or the engine. A court-set date always outranks a computed one.",
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "due", "source", "status"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string" },
+          "label": { "type": "string" },
+          "due": { "type": "string", "format": "date" },
+          "source": { "type": "string", "enum": ["court", "counsel", "computed", "manual"] },
+          "rule": { "type": "string", "description": "Rule id from rules/deadlines.json when computed" },
+          "status": { "type": "string", "enum": ["open", "met", "missed", "vacated", "unknown"] },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    "events": {
+      "type": "array",
+      "description": "What happened, when. The timeline is built from these plus dated documents.",
+      "items": {
+        "type": "object",
+        "required": ["date", "label", "kind"],
+        "additionalProperties": false,
+        "properties": {
+          "date": { "type": "string", "format": "date" },
+          "label": { "type": "string" },
+          "kind": { "type": "string", "enum": ["incident", "charge", "service", "filing", "hearing", "order", "correspondence", "appointment", "engagement", "deadline", "other"] },
+          "source": { "type": "string", "description": "Where this fact came from (document id, CASE.md, counsel)" },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    "documents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "path", "type"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string" },
+          "path": { "type": "string", "description": "Relative to the case directory; evidence dirs are gitignored" },
+          "type": { "type": "string", "enum": ["complaint", "answer", "motion", "order", "notice", "correspondence", "evidence", "contract", "receipt", "report", "agreement", "unknown"] },
+          "title": { "type": "string" },
+          "date": { "type": "string", "format": "date" },
+          "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+          "provenance": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "ingested_at": { "type": "string" },
+              "source": { "type": "string" },
+              "tool": { "type": "string" },
+              "ocr_confidence": { "type": "number" },
+              "classification_confidence": { "type": "number" }
+            }
+          }
+        }
+      }
+    },
+    "attorney_finder": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "needed": { "type": "boolean" },
+        "specialty": { "type": "string" },
+        "sources": { "type": "array", "items": { "type": "string" } },
+        "notes": { "type": "string" }
+      }
+    },
+    "notes": { "type": "string", "description": "Organizational notes only. No legal theories here — see PRD §6." }
+  }
+}

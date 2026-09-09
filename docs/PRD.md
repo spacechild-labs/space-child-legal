@@ -300,13 +300,13 @@ The platform **WILL**:
 ### Phase 1: Foundation (Current → Q2 2026)
 *"Make what exists solid."*
 
-- [ ] Stabilize existing case management for personal use (4 active cases)
-- [ ] Harden OCR-Provenance pipeline
-- [ ] Implement structured case file format (JSON schema)
-- [ ] Build deadline engine with jurisdiction-aware calculations
-- [ ] Document classification pipeline
-- [ ] Safety rail framework (output classification system)
-- [ ] Basic web UI for case dashboard
+- [x] Stabilize existing case management for personal use (4 active cases) — `cases/*/case.json`, validated; missing trigger dates named per case (2026-09-09)
+- [ ] Harden OCR-Provenance pipeline — provider interface + HTTP adapter exist (`src/document-pipeline/ocr.ts`); the service's contract is still unverified
+- [x] Implement structured case file format (JSON schema) — `schema/case.schema.json` (2026-09-09)
+- [x] Build deadline engine with jurisdiction-aware calculations — `rules/deadlines.json` (IA, WI, federal) + `src/deadline-engine`; every rule `verified:false` until counsel confirms (2026-09-09)
+- [x] Document classification pipeline — rule-based, cues + confidence + sha256 provenance (2026-09-09)
+- [x] Safety rail framework (output classification system) — `src/safety-rails`: gate, audit log, kill switch (2026-09-09)
+- [x] Basic web UI for case dashboard — static `build/dashboard.html` via `sclegal dashboard` (2026-09-09)
 
 ### Phase 2: Pro Se MVP (Q3–Q4 2026)
 *"Help one person not default."*

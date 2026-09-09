@@ -1,0 +1,22 @@
+{
+  "name": "@spacechild/legal",
+  "version": "0.1.0",
+  "description": "Space Child Legal — case management and procedural empowerment for people facing structural power imbalances. A file clerk, not a lawyer.",
+  "private": true,
+  "type": "module",
+  "license": "SEE LICENSE IN LICENSE",
+  "engines": { "node": ">=20" },
+  "bin": { "sclegal": "./dist/cli.js" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/**/*.test.js\"",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "cases": "node dist/cli.js cases",
+    "deadlines": "node dist/cli.js deadlines",
+    "dashboard": "node dist/cli.js dashboard"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}

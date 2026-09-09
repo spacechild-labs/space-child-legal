@@ -1,0 +1,103 @@
+{
+  "_about": "Procedural clocks the deadline engine can compute from a case's triggers. Every rule names its authority and carries verified:false until a licensed attorney in that jurisdiction has confirmed the number, the trigger, and the counting method. A computed date is a reminder to check, never a filing deadline to rely on (PRD §6.2: INFORMATIONAL output, always with its disclaimer). A date set by the court or by counsel always outranks a computed one.",
+  "_counting": "days are calendar days starting the day after the trigger; a due date that falls on a Saturday, Sunday, or federal holiday rolls to the next business day. Whether a given court also excludes state holidays or counts differently for short periods must be confirmed per rule.",
+  "rules": [
+    {
+      "id": "IA-CIVIL-ANSWER-20",
+      "jurisdiction": "IA",
+      "matter_types": ["debt_collection", "consumer", "eviction", "employment", "other"],
+      "forums": ["state_court"],
+      "label": "Answer or pre-answer motion due (Iowa district court)",
+      "trigger": "service_date",
+      "days": 20,
+      "authority": "Iowa R. Civ. P. 1.303(1)",
+      "verified": false,
+      "notes": "20 days after service of the original notice and petition; 60 days if served outside Iowa by certain methods. Confirm which service method applies."
+    },
+    {
+      "id": "IA-SMALL-CLAIMS-APPEAR-20",
+      "jurisdiction": "IA",
+      "matter_types": ["debt_collection", "consumer", "other"],
+      "forums": ["small_claims"],
+      "label": "Appearance and answer due (Iowa small claims)",
+      "trigger": "service_date",
+      "days": 20,
+      "authority": "Iowa Code § 631.4(1)",
+      "verified": false,
+      "notes": "The original notice states the deadline; use the date printed on the notice if it differs. Default judgment may follow a missed appearance."
+    },
+    {
+      "id": "IA-SMALL-CLAIMS-APPEAL-20",
+      "jurisdiction": "IA",
+      "matter_types": ["debt_collection", "consumer", "other"],
+      "forums": ["small_claims"],
+      "label": "Appeal of small claims judgment to district court",
+      "trigger": "judgment_date",
+      "days": 20,
+      "authority": "Iowa Code § 631.13(1)",
+      "verified": false,
+      "notes": "Notice of appeal within 20 days after judgment. Short and unforgiving; confirm the moment a judgment issues."
+    },
+    {
+      "id": "IA-OWI-DOT-HEARING-REQUEST-10",
+      "jurisdiction": "IA",
+      "matter_types": ["criminal_owi"],
+      "forums": ["administrative_hearing", "agency", "state_court"],
+      "label": "Request DOT hearing on implied-consent license revocation",
+      "trigger": "revocation_notice_date",
+      "days": 10,
+      "authority": "Iowa Code § 321J.13(1); 761 Iowa Admin. Code ch. 620",
+      "verified": false,
+      "notes": "Within ten days after receipt of the notice of revocation. Separate from the criminal case and often the first deadline to pass. If the notice date is unknown, ask counsel today."
+    },
+    {
+      "id": "IA-ICRC-COMPLAINT-300",
+      "jurisdiction": "IA",
+      "matter_types": ["employment"],
+      "forums": ["agency", "none", "state_court"],
+      "label": "Iowa Civil Rights Commission complaint",
+      "trigger": "adverse_action_date",
+      "days": 300,
+      "authority": "Iowa Code § 216.15(13)",
+      "verified": false,
+      "notes": "300 days after the alleged discriminatory or retaliatory act. Each distinct act may start its own clock; a PIP, a demotion, and a termination are different acts."
+    },
+    {
+      "id": "US-EEOC-CHARGE-300",
+      "jurisdiction": "US",
+      "states_deferral": ["IA", "WI"],
+      "matter_types": ["employment"],
+      "forums": ["agency", "none", "state_court", "federal_court"],
+      "label": "EEOC charge (deferral state: 300 days)",
+      "trigger": "adverse_action_date",
+      "days": 300,
+      "authority": "42 U.S.C. § 2000e-5(e)(1); 29 U.S.C. § 626(d)(1)(B) (ADEA)",
+      "verified": false,
+      "notes": "300 days in a state with its own fair-employment agency (Iowa and Wisconsin both are); 180 days elsewhere. Dual-filed charges are common; confirm with the agency which clock governs."
+    },
+    {
+      "id": "WI-CIVIL-ANSWER-20",
+      "jurisdiction": "WI",
+      "matter_types": ["debt_collection", "consumer", "eviction", "employment", "other"],
+      "forums": ["state_court"],
+      "label": "Answer due (Wisconsin circuit court)",
+      "trigger": "service_date",
+      "days": 20,
+      "authority": "Wis. Stat. § 802.06(1)(a)",
+      "verified": false,
+      "notes": "20 days after service for most defendants; 45 days for the state, its agencies, and certain insurers. Small claims in Wisconsin use the return date on the summons instead."
+    },
+    {
+      "id": "WI-ERD-COMPLAINT-300",
+      "jurisdiction": "WI",
+      "matter_types": ["employment"],
+      "forums": ["agency", "none", "state_court"],
+      "label": "Wisconsin Equal Rights Division complaint",
+      "trigger": "adverse_action_date",
+      "days": 300,
+      "authority": "Wis. Stat. § 111.39(1)",
+      "verified": false,
+      "notes": "300 days after the alleged act."
+    }
+  ]
+}

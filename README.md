@@ -26,7 +26,6 @@ we do not call it that):
 |---|---|
 | `legal/space-child-license/SPACE-CHILD-LICENSE-v1.0.md` | **In effect** (source); canonical plain text in `licensing/SPACE-CHILD-LICENSE-1.0.txt` |
 | `legal/space-child-license/SPACE-CHILD-LICENSE-v1.1-DRAFT.md` | Draft for counsel review; not yet in effect |
-| `legal/space-child-license/v1.1-REDLINE-AND-COUNSEL-BRIEF.md` | What changed from v1.0, why, and the ten questions only a lawyer can answer |
 | `legal/space-child-license/RATIONALE.md` | Design rationale and comparison to Hippocratic, NPL, PolyForm and others |
 | `legal/space-child-license/scl-audit-2026-09-08.json` | Corpus-wide consistency audit (170 repos scanned, 62 carry the license, 32 contradict it in their manifest) |
 | `cases/SC-001-ip/` | IP audit (2026-03-13), license comparison, trademark landscape, patent prior art |

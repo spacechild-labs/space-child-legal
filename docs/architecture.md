@@ -28,8 +28,8 @@ src/
 ## The licensing program
 
 1. **Text.** `SPACE-CHILD-LICENSE-v1.0.md` governs every repository that carries it today.
-   `SPACE-CHILD-LICENSE-v1.1-DRAFT.md` is the redraft for counsel; `v1.1-REDLINE-AND-COUNSEL-BRIEF.md`
-   lists what changed and the questions only a lawyer can answer.
+   `SPACE-CHILD-LICENSE-v1.1-DRAFT.md` is the redraft for counsel; the redline and counsel brief
+   that accompany it are held privately until v1.1 is settled.
 2. **Consistency.** `tools/scl-audit.mjs --root <checkouts>` reads LICENSE, package.json, Cargo.toml,
    pyproject.toml and README per repository and names every contradiction; `--fix` rewrites only the
    manifest line so registries advertise the license the LICENSE file grants. Changes go out as pull

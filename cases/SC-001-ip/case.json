@@ -1,0 +1,38 @@
+{
+  "$schema": "../../schema/case.schema.json",
+  "id": "SC-001",
+  "slug": "SC-001-ip",
+  "title": "Space Child License — IP protection and software licensing program",
+  "matter_type": "ip_licensing",
+  "status": "active",
+  "priority": "high",
+  "opened": "2026-03-01",
+  "jurisdiction": { "country": "US", "state": "IA", "forum": "none" },
+  "client": { "name": "Space Child (Nick Flach, licensor)", "role": "licensor" },
+  "representation": {
+    "status": "seeking",
+    "referral_sources": ["IP / open-source licensing counsel (to be engaged)", "Software Freedom Law Center", "Electronic Frontier Foundation"]
+  },
+  "posture": "investigation",
+  "events": [
+    { "date": "2026-03-01", "label": "Program opened; license design requirements set", "kind": "other", "source": "CASE.md" },
+    { "date": "2026-03-13", "label": "IP audit across the repositories completed", "kind": "other", "source": "IP-AUDIT-2026-03-13.md" },
+    { "date": "2026-09-08", "label": "License v1.1 draft and counsel brief prepared; manifest audit run (62 repos carry v1.0, 32 contradict it)", "kind": "other", "source": "legal/space-child-license/" },
+    { "date": "2026-09-09", "label": "Repositories consolidated into the spacechild-labs organisation; four manifest-fix PRs opened", "kind": "other", "source": "tools/scl-audit.mjs" }
+  ],
+  "documents": [
+    { "id": "doc-001", "path": "IP-AUDIT-2026-03-13.md", "type": "report", "title": "IP audit", "date": "2026-03-13" },
+    { "id": "doc-002", "path": "research/license-comparison.md", "type": "report", "title": "License comparison research" },
+    { "id": "doc-003", "path": "research/trademark-landscape.md", "type": "report", "title": "Trademark landscape" },
+    { "id": "doc-004", "path": "research/patent-prior-art.md", "type": "report", "title": "Patent prior art" },
+    { "id": "doc-005", "path": "../../legal/space-child-license/SPACE-CHILD-LICENSE-v1.1-DRAFT.md", "type": "agreement", "title": "Space Child License v1.1 (draft)", "date": "2026-09-08" },
+    { "id": "doc-006", "path": "../../legal/space-child-license/v1.1-REDLINE-AND-COUNSEL-BRIEF.md", "type": "report", "title": "v1.1 redline and counsel brief", "date": "2026-09-08" }
+  ],
+  "attorney_finder": {
+    "needed": true,
+    "specialty": "IP / software licensing / trademark",
+    "sources": ["IP counsel (private notes)", "Software Freedom Law Center", "EFF"],
+    "notes": "First ask: review of the v1.1 draft against the ten questions in the counsel brief; second: the intent-to-use trademark filings the IP audit recommended."
+  },
+  "notes": "No court or agency. The work product is the license, the tooling that applies and audits it, and the trademark filings. This is the only matter tracked in this repository."
+}

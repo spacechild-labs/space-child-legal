@@ -4,7 +4,7 @@
 **Date:** March 2, 2026  
 **Author:** Nick Flach  
 **License:** Space Child License v1.0  
-**Status:** Draft  
+**Status:** Draft — product spec for the generic matter-tracking engine kept in this repository. The repository's program is software licensing (see README); this document describes the engine's intended product, not any matter tracked here.  
 
 ---
 
@@ -201,7 +201,7 @@ What people actually need is not an AI lawyer. They need:
 ### Current Infrastructure (Already Built)
 - **OCR-Provenance:** Docker container on port 3100, 141 MCP tools
 - **Email:** IMAP/SMTP Gmail integration
-- **Case Files:** Local file-based case management (4 active cases)
+- **Case Files:** Local file-based matter records (`cases/*/case.json`)
 - **Legal Team:** LEGAL-TEAM.md attorney management
 
 ### Target Infrastructure
@@ -300,7 +300,7 @@ The platform **WILL**:
 ### Phase 1: Foundation (Current → Q2 2026)
 *"Make what exists solid."*
 
-- [x] Stabilize existing case management for personal use (4 active cases) — `cases/*/case.json`, validated; missing trigger dates named per case (2026-09-09)
+- [x] Case files as `cases/*/case.json`, validated; missing trigger dates named per matter (2026-09-09)
 - [ ] Harden OCR-Provenance pipeline — provider interface + HTTP adapter exist (`src/document-pipeline/ocr.ts`); the service's contract is still unverified
 - [x] Implement structured case file format (JSON schema) — `schema/case.schema.json` (2026-09-09)
 - [x] Build deadline engine with jurisdiction-aware calculations — `rules/deadlines.json` (IA, WI, federal) + `src/deadline-engine`; every rule `verified:false` until counsel confirms (2026-09-09)

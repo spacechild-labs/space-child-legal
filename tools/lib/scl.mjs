@@ -81,7 +81,10 @@ export function readLicense(dir) {
     if (kind !== "SCL") return out;
     const drift = [];
     if (raw.startsWith("﻿")) drift.push("bom");
-    if (/\r\n/.test(raw)) drift.push("crlf");
+    // CRLF in the working copy is drift only if the committed blob has it. On a Windows checkout
+    // with core.autocrlf=true every LF file reads back as CRLF (2026-09-09: 28 freshly merged,
+    // byte-identical LICENSE files "failed" strict mode that way). Ask the index.
+    if (/\r\n/.test(raw) && indexEol(dir, n) !== "lf") drift.push("crlf");
     if (!raw.endsWith("\n") || /\n\n$/.test(raw)) drift.push("trailing-newline");
     const norm = normalize(raw);
     let canon = null;
@@ -94,6 +97,15 @@ export function readLicense(dir) {
     return out;
   }
   return null;
+}
+
+/** "lf" | "crlf" | "mixed" | null — the line endings of the file as committed, from `git ls-files --eol`. */
+export function indexEol(dir, file) {
+  try {
+    const out = execFileSync("git", ["ls-files", "--eol", "--", file], { cwd: dir, encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] });
+    const m = out.match(/^i\/(lf|crlf|mixed|none)/);
+    return m ? (m[1] === "none" ? null : m[1]) : null;
+  } catch { return null; }
 }
 
 export function readNotice(dir) {

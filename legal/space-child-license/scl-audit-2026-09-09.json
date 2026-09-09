@@ -1,0 +1,4101 @@
+{
+ "scanned": 173,
+ "scl": 64,
+ "contradicting": 32,
+ "reference_only": 59,
+ "rows": [
+  {
+   "repo": "NickFlach/0xSCADA-node",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/0xSCADA-node",
+   "license": {
+    "file": "LICENSE.md",
+    "kind": "SCL",
+    "form": "full",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "content-differs"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "Cargo.toml",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": true,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/8n8",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/8n8",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "ISC"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/AMOR",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/AMOR",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": true,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ]
+  },
+  {
+   "repo": "NickFlach/AcumaticaManager",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/AcumaticaManager",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/Agent9",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/Agent9",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "pyproject.toml",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/AmcisIntegrator",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/AmcisIntegrator",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/AutoTiteSales",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/AutoTiteSales",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/Bloom",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/Bloom",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ]
+  },
+  {
+   "repo": "NickFlach/ChaosHeaderAI",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/ChaosHeaderAI",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/ChessAI",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/ChessAI",
+   "license": {
+    "file": "LICENSE",
+    "kind": "LGPL",
+    "form": null,
+    "version": null,
+    "canonical": false,
+    "drift": []
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/ClaudeWorkflowPersonal",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/ClaudeWorkflowPersonal",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/ConsciousnessHacker",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/ConsciousnessHacker",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "ISC"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": [
+    {
+     "file": "package.json",
+     "decl": "ISC"
+    }
+   ]
+  },
+  {
+   "repo": "NickFlach/ConsciousnessProbe",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/ConsciousnessProbe",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": null
+    },
+    {
+     "file": "pyproject.toml",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/CryptoEngineer",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/CryptoEngineer",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/CryptoParadoxOS",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/CryptoParadoxOS",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "pyproject.toml",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/CyberShield",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/CyberShield",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/DataBridge",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/DataBridge",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    },
+    {
+     "file": "pyproject.toml",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/DataSyncArchitect",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/DataSyncArchitect",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/ESCOCRMtracker",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/ESCOCRMtracker",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "pyproject.toml",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/ExpoNess",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/ExpoNess",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/FateMinter",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/FateMinter",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ]
+  },
+  {
+   "repo": "NickFlach/FerrymanX",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/FerrymanX",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/FlaukowskiAgent",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/FlaukowskiAgent",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ]
+  },
+  {
+   "repo": "NickFlach/FlaukowskiFashion",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/FlaukowskiFashion",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ]
+  },
+  {
+   "repo": "NickFlach/FlaukowskiMind",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/FlaukowskiMind",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ]
+  },
+  {
+   "repo": "NickFlach/GenesisBloom",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/GenesisBloom",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "pyproject.toml",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/GhostMagic",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/GhostMagic",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/GlyphDocumentor",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/GlyphDocumentor",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "pyproject.toml",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/GlyphicCompressor",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/GlyphicCompressor",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/GlyphicCompressor2",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/GlyphicCompressor2",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    },
+    {
+     "file": "pyproject.toml",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ]
+  },
+  {
+   "repo": "NickFlach/HumanityFrontier",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/HumanityFrontier",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ]
+  },
+  {
+   "repo": "NickFlach/Integrator",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/Integrator",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/KAX",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/KAX",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "ISC"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/L5XCloudDuplicator",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/L5XCloudDuplicator",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/MetaCompilerEngine",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/MetaCompilerEngine",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/MindSphere",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/MindSphere",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ]
+  },
+  {
+   "repo": "NickFlach/MusicMentor",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/MusicMentor",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/MusicPortal",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/MusicPortal",
+   "license": {
+    "file": "LICENSE",
+    "kind": "MIT",
+    "form": null,
+    "version": null,
+    "canonical": false,
+    "drift": []
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/MusicPortal-ReplitVersion",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/MusicPortal-ReplitVersion",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/NinjaPortal",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/NinjaPortal",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ]
+  },
+  {
+   "repo": "NickFlach/OCR-Provenance",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/OCR-Provenance",
+   "license": {
+    "file": "LICENSE",
+    "kind": "MIT",
+    "form": null,
+    "version": null,
+    "canonical": false,
+    "drift": []
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "SEE LICENSE IN LICENSE"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/PFORK-Agent",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/PFORK-Agent",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/PFORK_MCP",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/PFORK_MCP",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/PTOTracker",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/PTOTracker",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/ParadoxResolver",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/ParadoxResolver",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "pyproject.toml",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/PathPioneer",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/PathPioneer",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/PitchforkAnalyst",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/PitchforkAnalyst",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ]
+  },
+  {
+   "repo": "NickFlach/PitchforkDex",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/PitchforkDex",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/PitchforksDex",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/PitchforksDex",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ]
+  },
+  {
+   "repo": "NickFlach/PlanetaryQuantumNetwork",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/PlanetaryQuantumNetwork",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "pyproject.toml",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/PurposePilot",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/PurposePilot",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/QuantumGateway",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/QuantumGateway",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ]
+  },
+  {
+   "repo": "NickFlach/QuantumKernel",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/QuantumKernel",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "pyproject.toml",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/QuantumSentient",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/QuantumSentient",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ]
+  },
+  {
+   "repo": "NickFlach/QuantumShield",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/QuantumShield",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "pyproject.toml",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/QuantumSingularity",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/QuantumSingularity",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ]
+  },
+  {
+   "repo": "NickFlach/QueenSync-Orchestrator",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/QueenSync-Orchestrator",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "full",
+    "version": null,
+    "canonical": false,
+    "drift": [
+     "content-differs"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "SEE LICENSE IN LICENSE"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": true,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/ResonantBloom",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/ResonantBloom",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ]
+  },
+  {
+   "repo": "NickFlach/RustEnvAwareness",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/RustEnvAwareness",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "Cargo.toml",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/SEOSymphony",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/SEOSymphony",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/SIN",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/SIN",
+   "license": {
+    "file": "LICENSE",
+    "kind": "MIT",
+    "form": null,
+    "version": null,
+    "canonical": false,
+    "drift": []
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/SeventyBee",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/SeventyBee",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/SeventyBee-Commercial",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/SeventyBee-Commercial",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/ShadowGate",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/ShadowGate",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ]
+  },
+  {
+   "repo": "NickFlach/ShinVaelNoctis",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/ShinVaelNoctis",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ]
+  },
+  {
+   "repo": "NickFlach/ShinobiGhostMagic",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/ShinobiGhostMagic",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/ShinobiRunner",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/ShinobiRunner",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/SingularisPrime",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/SingularisPrime",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": true,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ]
+  },
+  {
+   "repo": "NickFlach/SpaceAgent",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/SpaceAgent",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    },
+    {
+     "file": "pyproject.toml",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ]
+  },
+  {
+   "repo": "NickFlach/SpaceAgentCraft",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/SpaceAgentCraft",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    },
+    {
+     "file": "pyproject.toml",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ]
+  },
+  {
+   "repo": "NickFlach/SpaceAgentIteration",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/SpaceAgentIteration",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/Spark-X",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/Spark-X",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/SparkX",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/SparkX",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/SqlChatHelper",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/SqlChatHelper",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/SyntheticConsciousness",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/SyntheticConsciousness",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/TestBedOperations",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/TestBedOperations",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/The-Hand",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/The-Hand",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/The-Hand-Android",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/The-Hand-Android",
+   "license": null,
+   "notice": null,
+   "manifests": [],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/Web3Primer",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/Web3Primer",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/YellowPaperSpace",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/YellowPaperSpace",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/ZenParticles3D",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/ZenParticles3D",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/acp-kannaka",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/acp-kannaka",
+   "license": null,
+   "notice": null,
+   "manifests": [],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/adversarial-design-review",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/adversarial-design-review",
+   "license": {
+    "file": "LICENSE",
+    "kind": "MIT",
+    "form": null,
+    "version": null,
+    "canonical": false,
+    "drift": []
+   },
+   "notice": null,
+   "manifests": [],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/agent9-87af7db0",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/agent9-87af7db0",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/angel-informant",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/angel-informant",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/chatHRM",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/chatHRM",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "pyproject.toml",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/collaborateESCO",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/collaborateESCO",
+   "license": {
+    "file": "LICENSE",
+    "kind": "MIT",
+    "form": null,
+    "version": null,
+    "canonical": false,
+    "drift": []
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "ISC"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/cosmic-empathy-core",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/cosmic-empathy-core",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/enigma-seed-core",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/enigma-seed-core",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/flux",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/flux",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "Cargo.toml",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/ghostOS",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/ghostOS",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": true,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ]
+  },
+  {
+   "repo": "NickFlach/ghostsignals",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/ghostsignals",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "full",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "content-differs"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ]
+  },
+  {
+   "repo": "NickFlach/ghostsignals-bridge",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/ghostsignals-bridge",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "Cargo.toml",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/goldengoat",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/goldengoat",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": true,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ]
+  },
+  {
+   "repo": "NickFlach/kannaka-code",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/kannaka-code",
+   "license": null,
+   "notice": null,
+   "manifests": [],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/kannaka-eye",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/kannaka-eye",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/kannaka-propose-adapters",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/kannaka-propose-adapters",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/kannaka-steward",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/kannaka-steward",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/llmfit",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/llmfit",
+   "license": {
+    "file": "LICENSE",
+    "kind": "MIT",
+    "form": null,
+    "version": null,
+    "canonical": false,
+    "drift": []
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "Cargo.toml",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/nats",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/nats",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/ninja-craft-hub",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/ninja-craft-hub",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/ninjamagicOS",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/ninjamagicOS",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "Cargo.toml",
+     "decl": "Apache-2.0"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/open-resonance-collective",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/open-resonance-collective",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "full",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "content-differs"
+    ]
+   },
+   "notice": null,
+   "manifests": [],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/pirateshipradiostation",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/pirateshipradiostation",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/pitchfork-echo-studio",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/pitchfork-echo-studio",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/pitchforks",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/pitchforks",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "full",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "content-differs"
+    ]
+   },
+   "notice": null,
+   "manifests": [],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/quantum-intellect-nexus",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/quantum-intellect-nexus",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/rust-ethernet-ip",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/rust-ethernet-ip",
+   "license": {
+    "file": "LICENSE",
+    "kind": "MIT",
+    "form": null,
+    "version": null,
+    "canonical": false,
+    "drift": []
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "Cargo.toml",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/singularis-rf",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/singularis-rf",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "pyproject.toml",
+     "decl": "SEE LICENSE IN LICENSE"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/stellar-dev-companion",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/stellar-dev-companion",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/the-foundry",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/the-foundry",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": true,
+    "callsItOpenSource": true,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "NickFlach/ultrasonic",
+   "dir": "/home/nick/graphify-corpus/repos/NickFlach/ultrasonic",
+   "license": {
+    "file": "LICENSE",
+    "kind": "MIT",
+    "form": null,
+    "version": null,
+    "canonical": false,
+    "drift": []
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "pyproject.toml",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "flaukowski/0xSCADA",
+   "dir": "/home/nick/graphify-corpus/repos/flaukowski/0xSCADA",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "flaukowski/1f916",
+   "dir": "/home/nick/graphify-corpus/repos/flaukowski/1f916",
+   "license": {
+    "file": "LICENSE",
+    "kind": "AGPL",
+    "form": null,
+    "version": null,
+    "canonical": false,
+    "drift": []
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "AGPL-3.0-only"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "flaukowski/FormZ",
+   "dir": "/home/nick/graphify-corpus/repos/flaukowski/FormZ",
+   "license": null,
+   "notice": null,
+   "manifests": [],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "flaukowski/Mind",
+   "dir": "/home/nick/graphify-corpus/repos/flaukowski/Mind",
+   "license": null,
+   "notice": null,
+   "manifests": [],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "flaukowski/PSRS",
+   "dir": "/home/nick/graphify-corpus/repos/flaukowski/PSRS",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "flaukowski/VibeAgent2",
+   "dir": "/home/nick/graphify-corpus/repos/flaukowski/VibeAgent2",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "flaukowski/WWWF",
+   "dir": "/home/nick/graphify-corpus/repos/flaukowski/WWWF",
+   "license": null,
+   "notice": null,
+   "manifests": [],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "flaukowski/flaukowski",
+   "dir": "/home/nick/graphify-corpus/repos/flaukowski/flaukowski",
+   "license": null,
+   "notice": null,
+   "manifests": [],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "flaukowski/ghostOS",
+   "dir": "/home/nick/graphify-corpus/repos/flaukowski/ghostOS",
+   "license": {
+    "file": "LICENSE",
+    "kind": "MIT",
+    "form": null,
+    "version": null,
+    "canonical": false,
+    "drift": []
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "flaukowski/ghostsignals",
+   "dir": "/home/nick/graphify-corpus/repos/flaukowski/ghostsignals",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "flaukowski/ghostvector",
+   "dir": "/home/nick/graphify-corpus/repos/flaukowski/ghostvector",
+   "license": {
+    "file": "LICENSE",
+    "kind": "MIT",
+    "form": null,
+    "version": null,
+    "canonical": false,
+    "drift": []
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    },
+    {
+     "file": "Cargo.toml",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "flaukowski/goldengoat",
+   "dir": "/home/nick/graphify-corpus/repos/flaukowski/goldengoat",
+   "license": {
+    "file": "LICENSE",
+    "kind": "MIT",
+    "form": null,
+    "version": null,
+    "canonical": false,
+    "drift": []
+   },
+   "notice": null,
+   "manifests": [],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "flaukowski/graphify",
+   "dir": "/home/nick/graphify-corpus/repos/flaukowski/graphify",
+   "license": {
+    "file": "LICENSE",
+    "kind": "Apache-2.0",
+    "form": null,
+    "version": "2.0",
+    "canonical": false,
+    "drift": []
+   },
+   "notice": {
+    "present": true,
+    "isSCL": false,
+    "holder": []
+   },
+   "manifests": [
+    {
+     "file": "pyproject.toml",
+     "decl": "Apache-2.0"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "flaukowski/kannaka-buzz",
+   "dir": "/home/nick/graphify-corpus/repos/flaukowski/kannaka-buzz",
+   "license": {
+    "file": "LICENSE",
+    "kind": "Apache-2.0",
+    "form": null,
+    "version": "2.0",
+    "canonical": false,
+    "drift": []
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": null
+    },
+    {
+     "file": "Cargo.toml",
+     "decl": "Apache-2.0"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "flaukowski/open-resonance-collective",
+   "dir": "/home/nick/graphify-corpus/repos/flaukowski/open-resonance-collective",
+   "license": {
+    "file": "LICENSE",
+    "kind": "MIT",
+    "form": null,
+    "version": null,
+    "canonical": false,
+    "drift": []
+   },
+   "notice": null,
+   "manifests": [],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "flaukowski/pitchfork-echo-studio",
+   "dir": "/home/nick/graphify-corpus/repos/flaukowski/pitchfork-echo-studio",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "flaukowski/pitchforks",
+   "dir": "/home/nick/graphify-corpus/repos/flaukowski/pitchforks",
+   "license": {
+    "file": "LICENSE",
+    "kind": "MIT",
+    "form": null,
+    "version": null,
+    "canonical": false,
+    "drift": []
+   },
+   "notice": null,
+   "manifests": [],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "flaukowski/point",
+   "dir": "/home/nick/graphify-corpus/repos/flaukowski/point",
+   "license": null,
+   "notice": null,
+   "manifests": [],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "flaukowski/saintbuilder",
+   "dir": "/home/nick/graphify-corpus/repos/flaukowski/saintbuilder",
+   "license": {
+    "file": "LICENSE",
+    "kind": "MIT",
+    "form": null,
+    "version": null,
+    "canonical": false,
+    "drift": []
+   },
+   "notice": null,
+   "manifests": [],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "flaukowski/sanna",
+   "dir": "/home/nick/graphify-corpus/repos/flaukowski/sanna",
+   "license": null,
+   "notice": null,
+   "manifests": [],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "flaukowski/skills",
+   "dir": "/home/nick/graphify-corpus/repos/flaukowski/skills",
+   "license": null,
+   "notice": null,
+   "manifests": [],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "flaukowski/start",
+   "dir": "/home/nick/graphify-corpus/repos/flaukowski/start",
+   "license": null,
+   "notice": null,
+   "manifests": [],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "kannaka-labs/.github",
+   "dir": "/home/nick/graphify-corpus/repos/kannaka-labs/.github",
+   "license": null,
+   "notice": null,
+   "manifests": [],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "kannaka-labs/0xSCADA",
+   "dir": "/home/nick/graphify-corpus/repos/kannaka-labs/0xSCADA",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "kannaka-labs/Agent-Kax",
+   "dir": "/home/nick/graphify-corpus/repos/kannaka-labs/Agent-Kax",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "kannaka-labs/Kannaktopus",
+   "dir": "/home/nick/graphify-corpus/repos/kannaka-labs/Kannaktopus",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "SEE LICENSE IN LICENSE"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": true,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "kannaka-labs/QuantumOS",
+   "dir": "/home/nick/graphify-corpus/repos/kannaka-labs/QuantumOS",
+   "license": {
+    "file": "LICENSE",
+    "kind": "LGPL",
+    "form": null,
+    "version": null,
+    "canonical": false,
+    "drift": []
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "pyproject.toml",
+     "decl": "GPL-2.0-only"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "kannaka-labs/consciousness-core",
+   "dir": "/home/nick/graphify-corpus/repos/kannaka-labs/consciousness-core",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "Cargo.toml",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "kannaka-labs/ghostsignals-rs",
+   "dir": "/home/nick/graphify-corpus/repos/kannaka-labs/ghostsignals-rs",
+   "license": {
+    "file": "LICENSE",
+    "kind": "MIT",
+    "form": null,
+    "version": null,
+    "canonical": false,
+    "drift": []
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "Cargo.toml",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "kannaka-labs/homebrew-kannaka",
+   "dir": "/home/nick/graphify-corpus/repos/kannaka-labs/homebrew-kannaka",
+   "license": null,
+   "notice": null,
+   "manifests": [],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "kannaka-labs/kannaka-apps",
+   "dir": "/home/nick/graphify-corpus/repos/kannaka-labs/kannaka-apps",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": []
+   },
+   "notice": null,
+   "manifests": [],
+   "readme": {
+    "present": true,
+    "mentionsSCL": true,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "kannaka-labs/kannaka-attention",
+   "dir": "/home/nick/graphify-corpus/repos/kannaka-labs/kannaka-attention",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "Cargo.toml",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "kannaka-labs/kannaka-cannon",
+   "dir": "/home/nick/graphify-corpus/repos/kannaka-labs/kannaka-cannon",
+   "license": {
+    "file": "LICENSE",
+    "kind": "Apache-2.0",
+    "form": null,
+    "version": "2.0",
+    "canonical": false,
+    "drift": []
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "pyproject.toml",
+     "decl": "BUSL-1.1"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "kannaka-labs/kannaka-constellation-marketplace",
+   "dir": "/home/nick/graphify-corpus/repos/kannaka-labs/kannaka-constellation-marketplace",
+   "license": null,
+   "notice": null,
+   "manifests": [],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "kannaka-labs/kannaka-crystal",
+   "dir": "/home/nick/graphify-corpus/repos/kannaka-labs/kannaka-crystal",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": []
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "Cargo.toml",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": true,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": [
+    {
+     "file": "Cargo.toml",
+     "decl": "MIT"
+    }
+   ]
+  },
+  {
+   "repo": "kannaka-labs/kannaka-grid",
+   "dir": "/home/nick/graphify-corpus/repos/kannaka-labs/kannaka-grid",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "pyproject.toml",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "kannaka-labs/kannaka-hdl",
+   "dir": "/home/nick/graphify-corpus/repos/kannaka-labs/kannaka-hdl",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": []
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "Cargo.toml",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": true,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": [
+    {
+     "file": "Cargo.toml",
+     "decl": "MIT"
+    }
+   ]
+  },
+  {
+   "repo": "kannaka-labs/kannaka-library",
+   "dir": "/home/nick/graphify-corpus/repos/kannaka-labs/kannaka-library",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": []
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "SEE LICENSE IN LICENSE"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": true,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "kannaka-labs/kannaka-memory",
+   "dir": "/home/nick/graphify-corpus/repos/kannaka-labs/kannaka-memory",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "Cargo.toml",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": [
+    {
+     "file": "Cargo.toml",
+     "decl": "MIT"
+    }
+   ]
+  },
+  {
+   "repo": "kannaka-labs/kannaka-observatory",
+   "dir": "/home/nick/graphify-corpus/repos/kannaka-labs/kannaka-observatory",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": true,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "kannaka-labs/kannaka-plugin",
+   "dir": "/home/nick/graphify-corpus/repos/kannaka-labs/kannaka-plugin",
+   "license": null,
+   "notice": null,
+   "manifests": [],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "kannaka-labs/kannaka-quantum",
+   "dir": "/home/nick/graphify-corpus/repos/kannaka-labs/kannaka-quantum",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "pyproject.toml",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "kannaka-labs/kannaka-radio",
+   "dir": "/home/nick/graphify-corpus/repos/kannaka-labs/kannaka-radio",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "Space Child License v1.0"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": true,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "kannaka-labs/kannaka-staff",
+   "dir": "/home/nick/graphify-corpus/repos/kannaka-labs/kannaka-staff",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "Space Child License v1.0"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": true,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "kannaka-labs/kannaka-tui",
+   "dir": "/home/nick/graphify-corpus/repos/kannaka-labs/kannaka-tui",
+   "license": {
+    "file": "LICENSE",
+    "kind": "MIT",
+    "form": null,
+    "version": null,
+    "canonical": false,
+    "drift": []
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "Cargo.toml",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "kannaka-labs/kannaka-wave",
+   "dir": "/home/nick/graphify-corpus/repos/kannaka-labs/kannaka-wave",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": []
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "Cargo.toml",
+     "decl": "SEE LICENSE IN LICENSE"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": true,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "kannaka-labs/kax-computer",
+   "dir": "/home/nick/graphify-corpus/repos/kannaka-labs/kax-computer",
+   "license": null,
+   "notice": null,
+   "manifests": [],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "kannaka-labs/ninja-portal",
+   "dir": "/home/nick/graphify-corpus/repos/kannaka-labs/ninja-portal",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "kannaka-labs/rogue-agent",
+   "dir": "/home/nick/graphify-corpus/repos/kannaka-labs/rogue-agent",
+   "license": null,
+   "notice": null,
+   "manifests": [],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "spacechild-labs/Space-Child-Dream",
+   "dir": "/home/nick/graphify-corpus/repos/spacechild-labs/Space-Child-Dream",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ]
+  },
+  {
+   "repo": "spacechild-labs/Space-Child-Legal-Site",
+   "dir": "/home/nick/graphify-corpus/repos/spacechild-labs/Space-Child-Legal-Site",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "spacechild-labs/SpaceChild",
+   "dir": "/home/nick/graphify-corpus/repos/spacechild-labs/SpaceChild",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ]
+  },
+  {
+   "repo": "spacechild-labs/SpaceChildCollective",
+   "dir": "/home/nick/graphify-corpus/repos/spacechild-labs/SpaceChildCollective",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "SEE LICENSE IN LICENSE"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "spacechild-labs/SpaceChildDev",
+   "dir": "/home/nick/graphify-corpus/repos/spacechild-labs/SpaceChildDev",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ]
+  },
+  {
+   "repo": "spacechild-labs/SpaceChildDev-Replit",
+   "dir": "/home/nick/graphify-corpus/repos/spacechild-labs/SpaceChildDev-Replit",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": false,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "spacechild-labs/SpaceChildWaitlist",
+   "dir": "/home/nick/graphify-corpus/repos/spacechild-labs/SpaceChildWaitlist",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ]
+  },
+  {
+   "repo": "spacechild-labs/SpaceChild_AntiGravity",
+   "dir": "/home/nick/graphify-corpus/repos/spacechild-labs/SpaceChild_AntiGravity",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "spacechild-labs/space-child-learn",
+   "dir": "/home/nick/graphify-corpus/repos/spacechild-labs/space-child-learn",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "spacechild-labs/space-child-legal",
+   "dir": "/home/nick/graphify-corpus/repos/spacechild-labs/space-child-legal",
+   "license": {
+    "file": "LICENSE",
+    "kind": "SCL",
+    "form": "reference",
+    "version": "1.0",
+    "canonical": false,
+    "drift": [
+     "bom",
+     "trailing-newline"
+    ]
+   },
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "SEE LICENSE IN LICENSE"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": true,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "spacechild-labs/spacechild-auth",
+   "dir": "/home/nick/graphify-corpus/repos/spacechild-labs/spacechild-auth",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": "MIT"
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": true
+   },
+   "contradictions": []
+  },
+  {
+   "repo": "spacechild-labs/spacechilddev-0a8493b3",
+   "dir": "/home/nick/graphify-corpus/repos/spacechild-labs/spacechilddev-0a8493b3",
+   "license": null,
+   "notice": null,
+   "manifests": [
+    {
+     "file": "package.json",
+     "decl": null
+    }
+   ],
+   "readme": {
+    "present": true,
+    "mentionsSCL": false,
+    "callsItOpenSource": false,
+    "hasLicenseSection": false
+   },
+   "contradictions": []
+  }
+ ]
+}
